@@ -1,0 +1,8 @@
+ sudo docker run -it 
+ -p 6000:5432 
+ -v /home/user/Documents/reserve:/var/list 
+ -e POSTGRES_DB="docker_db" 
+ -e POSTGRES_PASSWORD=test 
+ -e POSTGRES_USER=test
+ --name sql_db 
+ postgres:13.2-alpine
